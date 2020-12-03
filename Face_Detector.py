@@ -17,7 +17,7 @@ face_coordinates = trained_face_data.detectMultiScale(grey_scaled_image)
 for (x, y, w, h) in face_coordinates:
     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-#print(face_coordinates)
+print(face_coordinates)
 cv2.imshow('Face Detector', grey_scaled_image)
 cv2.waitKey()
 
